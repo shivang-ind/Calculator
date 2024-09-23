@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* justify-content: center; */
+
+  align-items: center;
+  height: 100vh;
+}
+.bg {
+  /* box-shadow: inset 0 10px 20px #000000; */
+  z-index: -1;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: url(https://t3.ftcdn.net/jpg/02/06/14/56/360_F_206145642_ch7d799Dq38xZfRQjEAYRLaYS9jsmezF.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  filter: blur(8px);
+}
+
+#calc {
+  margin-left: 650px;
+  font-family: "Protest Guerrilla", sans-serif;
+  background-color: #344e41;
+  border-radius: 15px;
+  max-width: 500px;
+  overflow: hidden;
+  box-shadow: 0 0 20px #000000;
+}
+
+#display {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  background-color: #3a5a40;
+  color: #ffb703;
+  font-size: 50px;
+  font-weight: 700;
+}
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 25px;
+}
+.operator {
+  background-color: #ffb703;
+}
+.clear {
+  height: 60px;
+  width: 450px;
+  margin: 20px;
+}
+.clear:active {
+}
+button {
+  width: 100px;
+  height: 100px;
+  background-color: #a3b18a;
+  border-radius: 50px;
+  border: none;
+  color: #fefae0;
+  font-size: 2em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+button:hover {
+  background-color: #cddbb4;
+}
+
+.operator:hover {
+  background-color: #f8d376;
+}
+
+button:active {
+  scale: 1.1;
+}
